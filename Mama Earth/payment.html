@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./CSS/payment.css">
+    <link rel="stylesheet" href="./CSS/head.css" />
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  </head>
+  <body>
+    <div id="head">
+
+      <nav>
+        <div class="nav-top">
+          <div class="logo">
+            <img
+              height="100%"
+              width="100%"
+              src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale"
+              alt=""
+            />
+          </div>
+          <div class="input__search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="search"
+              placeholder="Search for products..."
+            />
+            <button class="search__btn" id="search_btn">
+              <i class="fa fa-search icon-search" id="search_btn"></i>Search
+            </button>
+          </div>
+          <div class="cart__signIn__div">
+            <button class="cart__btn" id="click_cartbtn">
+              <i class="fa fa-shopping-cart icon-cart"></i>Cart
+              <span id="cartDataShow_tag"></span>
+            </button>
+            <div class="button">
+              <!-- Trigger/Open The Modal -->
+              <div class="login_btn">
+                <button id="myBtn">
+                  <i class="fa fa-user icon-signin" style="outline: none"></i
+                  >Login
+                </button>
+              </div>
+    
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="signin">
+                    <p><b>Sign In</b></p>
+                  </div>
+                  <input
+                    id="email"
+                    class="box-style"
+                    type="email"
+                    placeholder="Enter Your Email"
+                  />
+                  <br />
+                  <br />
+                  <input
+                    id="pass"
+                    class="box-style"
+                    type="password"
+                    placeholder="Enter Your password"
+                  /><br />
+                  <br />
+                  <br />
+                  <input type="checkbox" /><span>Remember me</span>
+                  <span><a class="forget" href="#">Forgot password?</a></span>
+                  <br />
+                  <br />
+                  <br />
+                  <button id="button-style">LogIn</button>
+                  <br />
+                  <br />
+                  <br />
+                  <hr />
+                  <br />
+    
+                  <div class="asignup">
+                    <span
+                      ><b
+                        >Don't have an account?<a id="butn" href="#"
+                          >Sign Up Now</a
+                        ></b
+                      ></span
+                    >
+                  </div>
+                </div>
+              </div>
+    
+              <div id="mdl" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="Hsignup">
+                    <p><b>Sign Up</b></p>
+                  </div>
+                  <input
+                    class="box-style"
+                    id="Email"
+                    type="email"
+                    placeholder="Enter your Email-Id"
+                  />
+                  <br />
+                  <br />
+                  <input
+                    class="box-style"
+                    id="Pass"
+                    type="password"
+                    placeholder="Type your password"
+                  />
+                  <br />
+                  <br />
+                  <input
+                    class="box-style"
+                    id="no"
+                    type="number"
+                    placeholder="Enter your Number"
+                  />
+                  <br />
+                  <br />
+                  <input type="checkbox" /><span>Remember me</span>
+                  <br />
+                  <br />
+                  <button class="btn-signup" id="signup">SignUp</button>
+                  <br />
+                  <br />
+                  <hr />
+                  <br />
+                  <span
+                    ><b
+                      >Alread have an account?<a id="log-In" href="#"
+                        >Sign In Now</a
+                      ></b
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="nav-bottom">
+          <div>
+            <p>HOME</p>
+          </div>
+          <div class="baby">
+            <p>BABY</p>
+            <div class="babyHover">
+              <div>
+                <p>Exolore</p>
+                <li>New Launches</li>
+                <li>Best Sellers</li>
+                <li>Combos</li>
+                <li>Gift Packs</li>
+              </div>
+              <div>
+                <p>Baby</p>
+                <li>Baby Shampoo</li>
+                <li>Baby Oralcare</li>
+                <li>Baby Oil</li>
+                <li>Baby Skin</li>
+                <li>Baby Bath</li>
+              </div>
+              <div><p style="color: #00afef">See All</p></div>
+            </div>
+          </div>
+          <div class="beauty">
+            <p>BEAUTY</p>
+            <div class="beautyHover">
+              <div>
+                <p>Exolore</p>
+                <li>New Launches</li>
+                <li>Best Sellers</li>
+                <li>Combos</li>
+                <li>Gift Packs</li>
+              </div>
+              <div>
+                <p>Beauty</p>
+                <li>Face</li>
+                <li>Hair</li>
+                <li>Body</li>
+              </div>
+              <div><p style="color: #00afef">See All</p></div>
+            </div>
+          </div>
+    
+          <div class="hair">
+            <p>HAIR</p>
+            <div class="hairHover">
+              <div>
+                <p>Exolore</p>
+                <li>New Launches</li>
+                <li>Best Sellers</li>
+                <li>Combos</li>
+                <li>Gift Packs</li>
+              </div>
+              <div>
+                <p>Hair</p>
+                <li>Shampoo</li>
+                <li>Conditioner</li>
+                <li>Hair Oil</li>
+                <li>Hair Mask</li>
+                <li>Hair Serum</li>
+              </div>
+              <div><p style="color: #00afef">See All</p></div>
+            </div>
+          </div>
+    
+          <div class="face">
+            <p>FACE</p>
+            <div class="faceHover">
+              <div>
+                <p>Exolore</p>
+                <li>New Launches</li>
+                <li>Best Sellers</li>
+                <li>Combos</li>
+                <li>Gift Packs</li>
+              </div>
+              <div>
+                <p>face</p>
+                <li>Face Wash</li>
+                <li>Face Mask</li>
+                <li>Face Cream</li>
+                <li>Face Serum</li>
+                <li>Face Scrub</li>
+                <li>Face Toner</li>
+                <li>Face Gel</li>
+                <li>Face Sheet Mask</li>
+              </div>
+              <div><p style="color: #00afef">See All</p></div>
+            </div>
+          </div>
+    
+          <div class="body">
+            <p>BODY</p>
+            <div class="bodyHover">
+              <div>
+                <p>Exolore</p>
+                <li>New Launches</li>
+                <li>Best Sellers</li>
+                <li>Combos</li>
+                <li>Gift Packs</li>
+              </div>
+              <div>
+                <p>Body</p>
+                <li>Body Butter</li>
+                <li>Body Wash</li>
+                <li>Body Lotion</li>
+                <li>Body Scrub</li>
+                <li>Hand Cream</li>
+              </div>
+              <div><p style="color: #00afef">See All</p></div>
+            </div>
+          </div>
+    
+          <div>
+            <p>GIFTPACKS</p>
+          </div>
+          <div>
+            <p>ALLPRODUCTS</p>
+          </div>
+          <div>
+            <p>BLOG</p>
+          </div>
+          <div>
+            <p>PLANTGOODNESS</p>
+          </div>
+          <div>
+            <p>STORELOCATION</p>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+
+
+    <div class="payment_cont">
+      <div class="address">
+        <h2>Delivery Address</h2>
+        <div class="name">
+          <input type="text" name="" id="Fname" placeholder="First Name*" />
+          <input type="text" name="" id="Lname" placeholder="Last Name*" />
+        </div>
+        <br /><br />
+        <div class="contact">
+          <input type="email" name="" id="email" placeholder="Email*" />
+          <input type="text" name="" id="number" placeholder="Number*" />
+        </div>
+        <br /><br />
+        <div class="city">
+          <input type="text" name="" id="pin" placeholder="Pin*" />
+          <input type="text" name="" id="city" placeholder="City*" />
+          <input type="text" name="" id="state" placeholder="State*" />
+        </div>
+        <br /><br />
+        <input type="text" name="" id="address" placeholder="Address*" />
+      </div>
+
+
+
+      <div class="cart-prod">
+        <div id="heading"> <h2>Order Summary  </h2><h2 id="cartCount"> </h2></div>
+        <div id="productDetail">
+        </div>
+        <div id="totalSec">
+          <p>Have a Coupon Code?</p>
+          <div id="enterCoupon"> <input id="couponInp" type="text" placeholder="ENTER COUPEN CODE HERE"> <button id="couponbutn">APPLY</button></div>
+          <div id="pricesum"><h3>Price Summary</h3> <h3 id="totalPri">total</h3></div>
+          <div id="grndtotl">
+            <div id="lftDiv">
+              <div><h4>Order Total</h4> </div>
+              <div><h4>Items Discount</h4></div>
+              <div><h4>Item Total</h4></div>
+              <div><h4>Coupon Discount</h4></div>
+              <div><h4>Shipping</h4></div>
+              <div><h4>5% online payment discount</h4></div>
+              <hr><div><h4>Grand Total</h4></div>
+            </div>
+            <div id="rytDiv">
+              <div><h4 id="ot"></h4> </div>
+              <div><h4 id="id">0</h4></div>
+              <div><h4 id="it">Item Total</h4></div>
+              <div><h4 id="cd">0</h4></div>
+              <div><h4 id="shi">0</h4></div>
+              <div><h4 id="opd">0</h4></div>
+              <hr>
+              <div><h4 id="gt">Grand Total</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="payment-method">
+        <div class="method">
+          <div class="card">
+            <button onclick="cardDetail()">Debit/Credit Card</button>
+          </div>
+          <div class="upi"><button onclick="upi()">UPI</button><br /></div>
+          <div class="cod">
+            <button onclick="cod()">Cash on Delivery</button>
+          </div>
+        </div>
+        <div class="pay-via">
+          <div id="card"></div>
+          <div id="upi"></div>
+          <div id="cash"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="footer2">
+
+
+      
+
+
+    </div>
+  </body>
+</html>
+
+<script src="./JS/payment.js"></script>
+<script src="./JS/Headscript.js"></script>
+<script src="./JS/cart.js"></script>
+
+<script>
+
+var modal = document.getElementById("myModal");
+var mdl = document.getElementById("mdl");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var butn = document.getElementById("butn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+
+};
+butn.onclick = function () {
+  mdl.style.display = "block";
+
+};
+var logIn = document.getElementById("");
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+span1.onclick = function () {
+  mdl.style.display = "none";
+};
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+window.onclick = function (event) {
+  if (event.target == mdl) {
+    mdl.style.display = "none";
+  }
+};
+document.getElementById("signup").addEventListener("click", signup);
+var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+function signup() {
+  //console.log(form.email.value)
+  var email = document.getElementById("Email").value;
+  console.log(email);
+  var pass = document.getElementById("Pass").value;
+  var mobile = document.getElementById("no").value;
+  var userCredientials = {
+    emailAddress: email,
+    password: pass,
+    Mobile: mobile,
+  };
+  userArr.push(userCredientials);
+  localStorage.setItem("userData", JSON.stringify(userArr));
+  window.location.href = "";
+}
+var a = document
+  .getElementById("button-style")
+  .addEventListener("click", signin);
+console.log(a);
+var regUser = JSON.parse(localStorage.getItem("userData"));
+function signin() {
+  btn.innerHTML = "LogOut";
+  var eMail = document.getElementById("email").value;
+  var pAss = document.getElementById("pass").value;
+  if (eMail == "admin" && pAss == "admin") {
+    window.location.href = "Admin.html";
+  }
+  for (var i = 0; i < regUser.length; i++) {
+    if (regUser[i].emailAddress == eMail && regUser[i].password == pAss) {
+      alert("Login Sucessfull");
+      window.location.href = "nav.html";
+    }
+  }
+}
+
+document.querySelector("#click_cartbtn").addEventListener("click",function(){
+  window.location.href="payment.html"
+})
+</script>
+<!-- <script type="module">
+
+
+</script> -->
