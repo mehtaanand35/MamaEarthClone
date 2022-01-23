@@ -1,0 +1,182 @@
+
+#head{
+  height: 120px;
+}
+.payment_cont {
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: none;
+  }
+  .cart-prod {
+    border: 1px solid lightgray;
+    height: 780px;
+    width: 90%;
+    margin: 20px;
+    font-family:'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #heading{
+    height: 50px;
+    display: flex;
+    padding: 0px 10px;
+    color: rgb(0,174,239);
+  }
+  #productDetail{
+    height: 220px;
+    overflow-y: scroll;
+    padding: 5px;
+  }
+  #productDetail>div{
+    padding: 10px;
+    display: flex;
+    width: 400px;
+    height: 190px;
+    margin: 10px 0px;
+  }
+  #productDetail>div>div>img{
+    width: 90%;
+  }
+  #productDetail>div>div{
+    padding: 5px;
+    font-size: 12px;
+  }
+ #productDetail>div>div:nth-child(2)>div:nth-child(3){
+   display: flex;
+ }
+ #productDetail>div>div:nth-child(2)>div:nth-child(3)>div>input{
+   width: 30px;
+   margin-right: 100px;
+ }
+  #productDetail>div>div>div:nth-child(2){
+    display: flex;
+    
+  }
+  #productDetail>div>div>div>p{
+    margin-left: 15px;
+  }
+  #totalSec{
+    padding: 10px;
+    height: 100px;
+
+  }
+  #enterCoupon{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  #couponInp{
+    width: 70%;
+    height: 40px;
+  }
+  #couponbutn{
+    width: 30%;
+    height: 46px;
+    color:rgb(0,174,239) ;
+    background-color: transparent;
+    border:2px solid rgb(0,174,239);
+  }
+  #pricesum{
+    height: 50px;
+    display: flex;
+    padding: 0px 10px;
+    color:rgb(0,174,239) ;
+    
+   
+  }
+  #totalPri{
+    margin-left: 200px;
+  }
+  #grndtotl{
+    height: 300px;
+    display: flex;
+    border: 1px solid rgb(212, 189, 189);
+  }
+  #grndtotl>div{
+    width: 45%;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  #lftDiv>div{
+    padding:0px 15px;
+  }
+  #rytDiv>div{
+    text-align:end;
+    padding:0px 10px;
+  }
+  .address{
+    height: 400px;
+  }
+  .payment-method {
+    height: 300px;
+    display: flex;
+    border: 1px solid lightgray;
+    margin-top: 5%;
+  }
+  .method {
+    border-right: 2px solid lightgray;
+    width: 35%;
+    height: 100%;
+  }
+  .pay-via {
+    width: 65%;
+    height: 100%;
+  }
+  .address > .name,
+  .contact,
+  .city {
+    width: 100%;
+    height: 8%;
+    text-align: center;
+  }
+  #Fname,
+  #Lname,
+  #email,
+  #number {
+    width: 45%;
+    height: 82%;
+    outline: none;
+    border: 2px solid lightgray;
+    border-radius: 5%;
+  }
+  #pin,
+  #city,
+  #state {
+    width: 29%;
+    height: 82%;
+    outline: none;
+    border: 2px solid lightgray;
+    border-radius: 5%;
+  }
+  #address {
+    width: 91%;
+    margin-left: 4%;
+    height: 7%;
+    outline: none;
+    border: 2px solid lightgray;
+    border-radius: 5%;
+  }
+  .address h2 {
+    margin-left: 4%;
+  }
+  .payment-method button {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-left: 2%;
+    color: gray;
+  }
+  .payment-method > .method > .card,
+  .upi,
+  .cod {
+    width: 100%;
+    height: 15%;
+  }
