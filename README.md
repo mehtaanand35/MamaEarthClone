@@ -2,5 +2,7 @@
 
 Home.html is the landing page, where user can signin/login. 
 
-<img src="" alt="image" />
+Live view : <a href="https://eloquent-allen-ba4ad9.netlify.app/">Mama Earth</a>
+
+<img src="M-E.png" alt="image" />
 
